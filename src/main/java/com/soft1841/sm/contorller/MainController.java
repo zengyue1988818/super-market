@@ -14,6 +14,8 @@ import java.util.ResourceBundle;
 
 /**
  * 主界面
+ * @author zengyue
+ * 2018.12.25
  */
 public class MainController implements Initializable {
     @FXML
@@ -31,7 +33,7 @@ public class MainController implements Initializable {
     }
 
     //显示商品数据
-    public void listGoods() throws Exception {
+    public void ListGoods() throws Exception {
         switchView("goods.fxml");
     }
 

@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.soft1841.sm</groupId>
-  <artifactId>super-market</artifactId>
+  <artifactId>supermarket</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>super-market</name>
+  <name>supermarket</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

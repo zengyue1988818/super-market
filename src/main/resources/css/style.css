@@ -3,7 +3,7 @@
     -fx-font-size: 14px;
     /*背景色*/
     -fx-border-color: rgb(163, 141, 200);
-    -fx-background-color: rgb(200, 146, 125);
+    -fx-background-color: rgb(200, 184, 114);
     -fx-pref-width: 100px;
     -fx-pref-height: 35px;
     -fx-cursor: hand;
@@ -19,7 +19,7 @@
 
 }
 .menu-btn:hover{
-    -fx-background-color: rgb(162, 138, 155);
+    -fx-background-color: rgb(106, 116, 162);
 }
 /*输入框样式*/
 .input-group {
@@ -71,7 +71,7 @@
 
 /*风琴标题面板背景色*/
 .titled-pane > .title {
-    -fx-background-color: rgb(151, 162, 152);
+    -fx-background-color: rgb(90, 112, 255);
     -fx-padding: 30 10 10 10;
 }
 
@@ -82,7 +82,7 @@
 }
 /*鼠标覆盖上去为暖色*/
 .menu8-btn:hover {
-    -fx-background-color: rgb(151, 162, 152);
+    -fx-background-color: rgb(110, 145, 162);
     -fx-text-fill: #fff
 }
 /*边框圆角按钮*/
@@ -96,5 +96,5 @@
     -fx-text-fill: #fff;
 }
 .menu-btn{
-    -fx-background-color: rgb(161, 162, 147);
+    -fx-background-color: rgb(128, 113, 184);
 }

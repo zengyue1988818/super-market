@@ -5,7 +5,7 @@ import cn.hutool.db.Entity;
 import com.soft1841.sm.dao.SellerDAO;
 import com.soft1841.sm.entity.Seller;
 
-import javax.swing.text.html.parser.Entity;
+
 import java.sql.SQLException;
 
 public class SellerDAOImpl implements SellerDAO {

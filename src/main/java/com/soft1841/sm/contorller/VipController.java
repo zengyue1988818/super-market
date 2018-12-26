@@ -20,7 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-import javax.swing.text.html.parser.Entity;
+
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -29,6 +29,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+/**
+ * zengyue
+ * 2018.12.26
+ */
 public class VipController implements Initializable {
     @FXML
     private FlowPane vipPane;
