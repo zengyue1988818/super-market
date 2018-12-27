@@ -1,14 +1,12 @@
 package com.soft1841.sm.dao;
 
-import cn.hutool.db.Entity;
+
 import com.soft1841.sm.entity.Type;
-import com.soft1841.sm.utils.DAOFactory;
+import com.soft1841.sm.until.DAOFactory;
 import org.junit.Test;
 
 import java.sql.SQLException;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class TypeDAOTest {
     //通过DAO工厂获得TypeDAO的实例
@@ -34,7 +32,7 @@ public class TypeDAOTest {
 
     @Test
     public void getTypeById() throws SQLException {
-       Entity type = typeDAO.getTypeById(1);
+        Type type = typeDAO.getTypeById(1);
         System.out.println(type);
     }
 }
