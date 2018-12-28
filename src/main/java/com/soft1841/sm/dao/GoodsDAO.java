@@ -1,17 +1,16 @@
 package com.soft1841.sm.dao;
-
-import cn.hutool.db.Entity;
+/**
+ * 商品DAO接口
+ * @ author zengyue
+ * 2018.12.26
+ */
 import com.soft1841.sm.entity.Goods;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * 商品接口
- */
 public interface GoodsDAO {
     /**
-     * 新增商品，返回自增主键
-     *
+     * 增加商品
      * @param goods
      * @return
      * @throws SQLException
@@ -20,59 +19,56 @@ public interface GoodsDAO {
 
     /**
      * 根据id删除商品
-     *
      * @param id
      * @return
+     * @throws SQLException
      */
     int deleteGoodsById(long id) throws SQLException;
 
     /**
      * 更新商品信息
-     *
-     * @param
-     * @return
-     */
-    int updateGoods(Goods goods) throws SQLException;
-
-
-    /**
-     * 查询所有商品
-     *
-     * @return
-     */
-    List<Entity> selectAllGoods() throws SQLException;
-
-
-    /**
-     * 根据id查询商品信息
-     *
-     * @param id
-     * @return
-     */
-    Entity getGoodsById(long id) throws SQLException;
-
-    /**
-     * 根据关键词模糊查询商品
-     * @param keywords
+     * @param goods
      * @return
      * @throws SQLException
      */
-    List<Entity> selectGoodsLike(String keywords) throws SQLException;
+    int updateGoods(Goods goods) throws SQLException;
 
     /**
-     * 根据商品类别查询商品信息
+     * 查询所有商品
+     * @return
+     * @throws SQLException
+     */
+    List<Goods> selectAllGoods() throws SQLException;
+
+    /**\
+     * 根据id查商品
+     * @param id
+     * @return
+     * @throws SQLException
+     */
+    Goods getGoodsById(Long id) throws SQLException;
+
+    /**
+     * 根据类别查商品
      * @param typeId
      * @return
      * @throws SQLException
      */
-    List<Entity> selectGoodsByTypeId(long typeId) throws SQLException;
+    List<Goods> selectGoodsByTypeId(long typeId) throws SQLException;
 
     /**
-     * 根据商品类别统计商品数量
+     * 根据关键词查商品
+     * @param keywords
+     * @return
+     * @throws SQLException
+     */
+    List<Goods> selectGoodsLike(String keywords) throws SQLException;
+
+    /**
+     * 根据类别统计商品数量
      * @param typeId
      * @return
      * @throws SQLException
      */
     int countByType(long typeId) throws SQLException;
-
 }

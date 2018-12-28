@@ -1,15 +1,16 @@
 package com.soft1841.sm.dao;
 
-import cn.hutool.db.Entity;
+/**
+ * 图书类别DAO接口
+ * @auther zengyue
+ * 2018 12.26
+ */
 import com.soft1841.sm.entity.Type;
-
 
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * 商品类别DAO接口
- */
+
 public interface TypeDAO {
 
     /**
@@ -37,6 +38,5 @@ public interface TypeDAO {
      * @param id
      * @return
      */
-    Entity getTypeById(int id) throws SQLException;
-
+    Type getTypeById(long id) throws SQLException;
 }
