@@ -20,7 +20,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class AdminMainController implements Initializable {
+public class AdminMainController implements  Initializable{
     @FXML
     private StackPane mainContainer;
     @FXML
@@ -54,6 +54,9 @@ public class AdminMainController implements Initializable {
 
         switchView("goods_analysis.fxml");
 
+    }
+    public void listcashier() throws Exception{
+        switchView("cashier.fxml");
     }
 
 
