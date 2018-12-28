@@ -1,33 +1,31 @@
 package com.soft1841.sm.entity;
 
-
-public class Vip {
-    private String id;
+/**
+ * VIP实体类接口
+ * @author zengyue
+ * 2018.12.27
+ */
+public class VIP {
+    private Long id;
+    private  String phone;
     private String name;
-    private String year;
-    private String picture;
-    private String jifen;
-    private String mobile;
-    private String address;
+    private String province;
+    private String number;
 
-    public Vip(String id, String name, String year, String picture, String jifen, String mobile, String address) {
-        this.id = id;
-        this.name = name;
-        this.year = year;
-        this.picture = picture;
-        this.jifen = jifen;
-        this.mobile = mobile;
-        this.address = address;
-    }
-    public Vip() {
-    }
-
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getName() {
@@ -38,43 +36,30 @@ public class Vip {
         this.name = name;
     }
 
-    public String getYear() {
-        return year;
+    public String getProvince() {
+        return province;
     }
 
-    public void setYear(String year) {
-        this.year = year;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getNumber() {
+        return number;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getJifen() {
-        return jifen;
-    }
-
-    public void setJifen(String jifen) {
-        this.jifen = jifen;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
+    @Override
+    public String toString() {
+        return "VIP{" +
+                "id=" + id +
+                ", phone='" + phone + '\'' +
+                ", name='" + name + '\'' +
+                ", province='" + province + '\'' +
+                ", number='" + number + '\'' +
+                '}';
     }
 }

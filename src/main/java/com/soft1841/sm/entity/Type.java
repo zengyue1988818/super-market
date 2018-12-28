@@ -1,16 +1,16 @@
 package com.soft1841.sm.entity;
 
-import cn.hutool.db.Entity;
+/**
+ * 类别实体类
+ * @auther zengyue
+ * 2018 12.26
+ */
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-/**
- * 类别实体类
- * @author zengyue
- * 2018.12.25
- */
-public class Type extends Entity {
-    //以JavaFX属性绑定的形式，定义和数据表字段id和type_name对应的属性，注意命名规范
+
+public class Type {
+
     private final SimpleLongProperty id = new SimpleLongProperty();
     private final SimpleStringProperty typeName = new SimpleStringProperty("");
 
