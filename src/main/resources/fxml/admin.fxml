@@ -62,7 +62,7 @@
                            </TitledPane>
                            <TitledPane alignment="TOP_LEFT" text="管理员管理">
                                <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                   <Button styleClass="menu-btn" text="管理员信息" />
+                                   <Button  styleClass="menu-btn" text="管理员信息"  />
                                    <Button styleClass="menu-btn" text="统计分析" />
                                </VBox>
                            </TitledPane>
