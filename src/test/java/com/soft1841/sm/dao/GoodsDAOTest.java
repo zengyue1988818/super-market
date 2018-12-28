@@ -16,7 +16,7 @@ public class GoodsDAOTest{
         Goods goods = new Goods();
         goods.setTypeId(1);
 
-        goods.setName("测试书籍");
+        goods.setName("测试商品");
 
         goods.setPicture("https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511831665.jpg");
 
