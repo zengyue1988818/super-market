@@ -16,7 +16,7 @@ public class CashierMainAPP extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("超市前台收银系统");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/cashier.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/cashiermain.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         primaryStage.setMaximized(true);
